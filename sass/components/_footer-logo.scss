@@ -1,0 +1,43 @@
+.contact-block__logo {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+    color: $color-button;
+    font-size: $font-size-logo;
+    line-height: 1.19;
+    letter-spacing: $letter-spacing-medium;
+    text-decoration: none;
+}
+.nav__web--inverse {
+    color: $background-color-main;
+}
+.contact-address:nth-child(-n+3) {
+    margin-bottom: 9px;
+}
+.contact-block__address {
+    color: $background-color-main;
+    font-weight: $font-weight-four;
+    font-size: $font-size-extrasmall;
+    line-height: 1.71;
+    letter-spacing: $letter-spacing-medium;
+    text-decoration: none;
+    transition: color $twohundred-dur $timing-function;
+    &:hover, &:focus {
+        color: $color-hover;
+    }
+}
+.contact-block__mailandtel {
+    color: $color-white-opacity;
+    font-weight: $font-weight-four;
+    font-size: $font-size-extrasmall;
+    line-height: 1.71;
+    letter-spacing: $letter-spacing-medium;
+    text-decoration: none;
+
+    transition: color $twohundred-dur $timing-function;
+    &:hover, &:focus {
+    color: $color-hover;
+}
+}
+
+

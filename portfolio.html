@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- Спочатку нормалізатор -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <!-- Потім ваші стилі -->
+    <!-- css -->
+    <!-- <link rel="stylesheet" href="./styles/styles.css"> -->
+    <link rel="stylesheet" href="./css/main.min.css">
+    <title>WebStudio\Portfolio</title>
+</head>
+
+   <body>    
+        <header>
+            <div class="container header">
+                <nav class="nav">
+                    <a href="./index.html" class="nav__logo">
+                        <span class="nav__web">Web</span>Studio</a>
+                    <ul class="nav-main list">
+                        <li class="nav-main__items"><a href="./index.html" class="nav-main__link">Студія</a></li>
+                        <li class="nav-main__items"><a href="./portfolio.html" class="nav-main__link nav-main__link--current">Портфоліо</a></li>
+                        <li class="nav-main__items"><a href="./index.html" class="nav-main__link">Контакти</a></li>
+                    </ul>
+                </nav>
+        
+        
+                <ul class="address list">
+                    <li class="address__items">
+                        <a href="mailto:info@devstudio.com" class="address__contact">
+                            <svg class="address__icon" width="16" height="12">
+                                <use href="./images/symbol-defs.svg#icon-envelope">
+                                </use>
+                            </svg>
+                            info@devstudio.com</a>
+                    </li>
+                    <li class="address__items">
+                        <a href="tel:+380961111111" class="address__contact">
+                            <svg class="address__icon" width="10" height="16">
+                                <use href="./images/symbol-defs.svg#icon-smartphone">
+                                </use>
+                            </svg>
+                            +38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+    <section class="portfolio" >        
+        <div class="container">
+            <!-- Sortings button -->
+       <ul class="job-button list">
+           <li class="job-button__items"><button type="button" class="job-button__button button">Веб-cайти</button></li>
+           <li class="job-button__items"><button type="button" class="job-button__button button">Застосунки</button></li>
+           <li class="job-button__items"><button type="button" class="job-button__button button">Дизайн</button></li>
+           <li class="job-button__items"><button type="button" class="job-button__button button">Маркетинг</button></li>
+           <li class="job-button__items"><button type="button" class="job-button__button button">Всі</button></li>
+        </ul>
+
+         <!-- Job presentations' photoes -->      
+        <ul class="job-presentation list">
+
+            <li class="job-presentation__items">                            
+                <a href=" " class="job-presentation__ref">
+                <div class="job-presentation__window">               
+                <img class="job-presentation__image" src="images/portfolio/technocriak.jpg" alt="ноутбук з фотографіями" width="370" />
+                 <div class="job-presentation__cover">
+                    <p class="job-presentation__text">Ресурс  пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                Все це дозврлить відвідувачу отримати вичерпну інформацію про компанію чи приватну особу</p>
+                </div>               
+                </div>                
+                <div class="job-presentation__sample">
+                <h3 class="job-presentation__project">Технокряк</h3>
+                <p class="job-presentation__type">Веб-cайт</p>
+                </div>
+                 </a>   
+            </li>
+            
+            <li class="job-presentation__items">
+                <a href=" " class="job-presentation__ref">
+                <div class="job-presentation__window">
+                <img class="ijob-presentation__image" src="images/portfolio/neworlean.jpg" alt="bascketballphoto" width="370" />
+                <div class="job-presentation__cover">
+                    <p class="job-presentation__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                        Все це дозврлить відвідувачу отримати вичерпну інформацію про компанію чи приватну особу</p>
+                </div>
+                </div>               
+                <div class="job-presentation__sample">
+                <h3 class="job-presentation__project">Постер New Orlean vs Golden Star</h3>
+                <p class="job-presentation__type">Дизайн</p>
+                </div>
+                </a>
+            </li>
+
+            <li class="job-presentation__items">            
+                <a href=" " class="job-presentation__ref">
+                <div class="job-presentation__window">
+                <img class="job-presentation__image" src="images/portfolio/seafood.jpg"  alt="restoranphoto" width="370" />
+                <div class="job-presentation__cover">
+                    <p class="job-presentation__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                         Все це дозврлить відвідувачу отримати вичерпну інформацію про компанію чи приватну особу</p>
+                </div>
+                </div>                    
+                <div class="job-presentation__sample">
+                <h3 class="job-presentation__project">Ресторан Seafood</h3>
+                <p class="job-presentation__type">Застосунок</p>
+                </div>
+                </a>
+            </li>
+
+            <li class="job-presentation__items">
+                <a href=" " class="job-presentation__ref">
+                <div class="job-presentation__window">
+                <img class="job-presentation__image" src="images/portfolio/prime.jpg" alt="headphones" width="370" />
+                <div class="job-presentation__cover">
+                    <p class="job-presentation__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                         Все це дозврлить відвідувачу отримати вичерпну інформацію про компанію чи приватну особу</p>
+                </div>
+                </div>                            
+                <div class="job-presentation__sample">
+                    <h3 class="job-presentation__project">Проект Prime</h3>
+                    <p class="job-presentation__type">Маркетинг</p>
+                </div>
+                </a>
+            </li>
+
+            <li class="job-presentation__items">
+                <a href=" " class="job-presentation__ref">
+                <div class="job-presentation__window">
+                <img class="job-presentation__image" src="images/portfolio/boxes.jpg" alt="twoboxes" width="370" />
+                <div class="job-presentation__cover">
+                    <p class="job-presentation__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                        Все це дозврлить відвідувачу отримати вичерпну інформацію про компанію чи приватну особу</p>
+                </div>
+                </div>    
+                <div class="job-presentation__sample">
+                    <h3 class="job-presentation__project">Проект Boxes</h3>
+                    <p class="job-presentation__type">Застосунок</p>
+                </div>
+                </a>
+            </li>
+
+            <li class="job-presentation__items">
+                <a href=" " class="job-presentation__ref">
+                <div class="job-presentation__window">
+                <img class="job-presentation__image" src="images/portfolio/inspiration.jpg" alt="computers`monitor" width="370" />
+                <div class="job-presentation__cover">
+                    <p class="job-presentation__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                        Все це дозврлить відвідувачу отримати вичерпну інформацію про компанію чи приватну особу</p>
+                </div>
+                </div>                   
+                <div class="job-presentation__sample">
+                    <h3 class="job-presentation__project">Inspiration has no Borders</h3>
+                    <p class="job-presentation__type">Веб-cайт</p>
+                </div>
+                </a>
+            </li>
+
+            <li class="job-presentation__items">
+                <a href=" " class="job-presentation__ref">
+                <div class="job-presentation__window">
+                <img class="job-presentation__image" src="images/portfolio/limited.jpg" alt="published magasine" width="370" />
+                <div class="job-presentation__cover">
+                    <p class="job-presentation__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                        Все це дозврлить відвідувачу отримати вичерпну інформацію про компанію чи приватну особу</p>
+                </div>
+                </div>                   
+                <div class="job-presentation__sample">
+                    <h3 class="job-presentation__project">Видання Limited Edition</h3>
+                    <p class="job-presentation__type">Дизайн</p>
+                </div>
+                </a>
+            </li>
+
+            <li class="job-presentation__items">
+                <a href=" " class="job-presentation__ref">
+                <div class="job-presentation__window">
+                <img class="job-presentation__image" src="images/portfolio/project.jpg" alt="paperwithsymbols" width="370" />
+                <div class="job-presentation__cover">
+                    <p class="job-presentation__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                         Все це дозврлить відвідувачу отримати вичерпну інформацію про компанію чи приватну особу</p>
+                </div>
+                </div>  
+                <div class="job-presentation__sample">
+                    <h3 class="job-presentation__project">Проект LAB</h3>
+                    <p class="job-presentation__type">Маркетинг</p>
+                </div>
+                </a>
+            </li>
+
+            <li class="job-presentation__items">
+                <a href=" " class="job-presentation__ref">
+                <div class="job-presentation__window">
+                <img class="job-presentation__image" src="images/portfolio/growing.jpg" alt="notebook" width="370" />
+                <div class="job-presentation__cover">
+                    <p class="job-presentation__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                         Все це дозврлить відвідувачу отримати вичерпну інформацію про компанію чи приватну особу</p>
+                </div>
+                </div>                    
+                <div class="job-presentation__sample">
+                    <h3 class="job-presentation__project">Growing Business</h3>
+                    <p class="job-presentation__type">Застосунок</p>
+                </div>
+                </a>
+            </li>
+            </ul>
+
+        </div>   
+    </section>
+
+    <footer>
+        <div class="container footer">
+
+            <ul class="contact list">
+                <li class="contact-block">
+                    <a href="./index.html" class="contact-block__logo">
+                    <span class="nav__web">Web</span><span
+                    class="nav__web nav__web--inverse">Studio</span></a>
+                </li>
+                <li class="contact-address">
+                    <a href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.4265841,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.53838584"
+                    target="_blank" class="contact-block__address">м. Київ, пр-т Лесі Українки, 26.</a>
+                </li>
+                <li class="contact-address">
+                    <a href="mailto:info@devstudio.com" class="contact-block__mailandtel">info@example.com</a>
+                </li>
+                <li class="contact-address">
+                    <a href="tel:+380961111111" class="contact-block__mailandtel">+38 099 111 11 11</a>
+                </li>
+            </ul>
+    
+            <div class="icons-block">
+                <span class="icons-block__slogan">ПРИЄДНУЙТЕСЬ</span>
+
+                <ul class="social-contact">
+
+                    <li class="social-contact__icon">
+                        <a href="" class="social-contact__ref">
+                        <svg class="social-contact__image">
+                        <use href="./images/symbol-defs.svg#icon-instagram">
+                        </use>
+                        </svg>
+                        </a>
+                    </li>
+                    <li class="social-contact__icon">
+                        <a href="" class="social-contact__ref">
+                        <svg class="social-contact__image">
+                        <use href="./images/symbol-defs.svg#icon-twitter">
+                        </use>
+                        </svg>
+                        </a>
+                    </li>
+                    <li class="social-contact__icon">
+                        <a href="" class="social-contact__ref">
+                         <svg class="social-contact__image">
+                        <use href="./images/symbol-defs.svg#icon-facebook">
+                        </use>
+                        </svg>
+                        </a>
+                    </li>
+                    <li class="social-contact__icon">
+                        <a href="" class="social-contact__ref">
+                        <svg class="social-contact__image">
+                        <use href="./images/symbol-defs.svg#icon-linkedin">
+                        </use>
+                        </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="subscription-block">
+                <p class="subscription-block__slogan">підпишіться на розсилку</p>
+                
+                <form class="subscription-block__email">
+                    <label for="E-mail"></label>
+                    <input type="email" name="E-mail" placeholder="E-mail" id="E-mail" />                  
+                
+                    <button class="subscription-block__button" type="submit">Підписатись
+                        <svg class="subscription-block__image">
+                        <use href="./images/icons.svg#icon-telegramm">
+                        </use>
+                        </svg>
+                    </button>
+                </form>  
+            </div>
+
+        </div>
+    </footer>
+    
+</body>
+</html>
+

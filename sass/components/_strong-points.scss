@@ -1,0 +1,43 @@
+.strong-points {
+    padding: 94px 0;
+}
+.points {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.point-set:not(:first-child) {
+    margin-left: 30px;
+}
+
+.point-set__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    height: 120px;
+    width: 270px;
+    border-radius: 4px;
+    background-color: $background-color-button;
+}
+.point-set__image {
+    width: 70px;
+    height: 70px;
+}
+.point-set__title {
+    margin-top: 0;
+    font-weight: $font-weight-seven;
+    font-size: $font-size-extrasmall;
+    line-height: 1.14;
+    letter-spacing: $letter-spacing-medium;
+    text-transform: uppercase;
+}
+.point-set__text {
+    margin: 0;
+    color: $color-addition;
+    font-weight: $font-weight-four;
+    font-size: $font-size-extrasmall;
+    line-height: 1.71;
+    letter-spacing: $letter-spacing-medium;
+}

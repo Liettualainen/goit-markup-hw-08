@@ -1,0 +1,15 @@
+header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
+
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header, nav, .nav-main {
+    display: flex;
+    align-items: center;
+}

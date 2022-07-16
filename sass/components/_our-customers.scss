@@ -1,0 +1,36 @@
+.customers {
+    padding: 94px 0;
+}
+.customers-block {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.customers-block__set:not(:last-child) {
+    margin-right: 30px;
+}
+.customers-block__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92px;
+    width: 170px;
+    border: 1px solid $color-icon-black;
+    border-radius: 4px;
+    fill: $color-icon-black;
+    background-color: $color-icon-background;
+    transition: fill $twohundred-dur $timing-function,
+                    border $twohundred-dur $timing-function;
+
+
+            &:hover, &:focus    {
+                                fill: $color-button;
+                                border: 1px solid $color-button;
+                                }
+}
+.customers-block__image {
+    width: 106px;
+    height: 60px;
+}
+

@@ -1,0 +1,53 @@
+.main-slogan {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+    background-color: $background-color-addition;
+}
+.overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(..//images/slogan/Img\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.main-slogan__box {
+    width: 696px;
+    margin: 0 auto;
+}
+.main-slogan__text {
+    margin: 0;
+    color: $background-color-main;
+    font-weight: $font-weight-nine;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: $letter-spacing-big;
+    text-transform: uppercase;
+}
+.button {
+    cursor: pointer;
+    border: 0px solid transparent;
+}
+.main-slogan__button {
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+    border-radius: 4px;
+    padding: 10px 30px;
+    min-width: 200px;
+
+    color: $background-color-main;
+    background-color: $color-button;
+
+    font-family: inherit;
+    font-weight: $font-weight-seven;
+    font-size: $font-size-small;
+    line-height: 1.88;
+    letter-spacing: $letter-spacing-big;
+
+    transition: background-color $twohundred-dur $timing-function;
+
+    &:hover {
+    background-color: $color-hover;
+}
+}

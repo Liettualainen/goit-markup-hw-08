@@ -1,0 +1,76 @@
+.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: $background-color-button;
+}
+.team-set {
+    display: flex;
+    gap: 30px;
+    flex-basis: calc((100% - 90px) / 4);
+    text-align: center;
+}
+.team-card {
+    box-sizing: border-box;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: $background-color-main;
+}
+.team-card__photo {
+    display: block;
+    max-width: 100%;
+}
+.team-card__description {
+    padding: 30px 0 0 0;
+}
+.team-card__name {
+    margin: 0em;
+    font-weight: $font-weight-five;
+    font-size: $font-size-small;
+    line-height: 1.19;
+    letter-spacing: $letter-spacing-medium;
+}
+.team-card__position {
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: $color-addition;
+    font-weight: $font-weight-four;
+    font-size: $font-size-small;
+    line-height: 1.19;
+    letter-spacing: $letter-spacing-medium;
+}
+.team-card__social {
+    display: flex;
+    padding: 16px 32px 30px 32px;
+    list-style: none;
+}
+.team-card__link {
+    margin: 0;
+    padding: 0;
+
+    &:not(:last-child) {
+    margin-right: 10px;
+}
+}
+.team-card__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    fill: $color-icon-black;
+    background-color: $color-icon-background;
+
+    transition: fill $twohundred-dur $timing-function,
+        background-color $twohundred-dur $timing-function;
+
+        &:hover, &:focus {
+    fill: $background-color-main;
+    background-color: $color-hover;
+                        }
+}
+.team-card__image {
+    width: 20px;
+    height: 20px;
+}

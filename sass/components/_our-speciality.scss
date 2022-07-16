@@ -1,0 +1,44 @@
+.photo {
+    padding-bottom: 94px;
+}
+.section-title {
+    margin-top: 0%;
+    margin-bottom: 50px;
+    font-weight: $font-weight-seven;
+    font-size: $font-size-superbig;
+    line-height: 1.17;
+    letter-spacing: $letter-spacing-medium;
+    text-align: center;
+}
+.photo-card {
+    display: flex;
+    gap: 30px;
+
+    &__cover {
+    position: relative;
+            &::before {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: $color-cover-background;
+                    }
+                }
+}
+.photo-card__text {
+    position: absolute;
+    bottom: 27px;
+    left: 0;
+    width: 100%;
+    display: block;
+    font-weight: $font-weight-seven;
+    font-size: $font-size-extrasmall;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: $letter-spacing-medium;
+    text-transform: uppercase;
+    color: $background-color-main;
+}

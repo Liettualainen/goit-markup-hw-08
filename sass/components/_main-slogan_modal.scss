@@ -1,0 +1,191 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 2931px;
+    background-color: rgba(0, 0, 0, 0.2);
+
+    opacity: 1;
+    transition: opacity $twohundred-dur $timing-function;
+    z-index: 2;
+
+    &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+}
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    height: 581px;
+    padding: 40px;
+    background-color: $background-color-main;
+}
+textarea {
+    width: 100%;
+    resize: none;
+}
+.modal-form {
+    width: 448px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.modal-form__slogan {
+    display: inline-block;
+    font-weight: $font-weight-seven;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: $letter-spacing-medium;
+    color: #212121;
+    margin-bottom: 12px;
+}
+.modal-form__details {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 4px;
+    text-align: left;
+
+    font-weight: $font-weight-four;
+    font-size: $font-size-twelf;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: $color-addition;
+}
+.modal-form__console input {
+    padding: 11px 0px 11px 40px;
+}
+.modal-form__console {
+    position: relative;
+
+    &:not(:last-child) {
+    margin-bottom: 10px;
+}
+}
+.modal-form__console textarea {
+    padding: 12px 16px;
+}
+.modal-form__image {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 12px;
+
+    width: 18px;
+    height: 18px;
+    transition: fill $twohundred-dur $timing-function;
+
+
+    .modal-form__console:hover &,
+    .modal-form__console:focus & {
+    fill: $color-button;
+    cursor: pointer;
+}
+}
+
+.input-form, textarea {
+    width: 100%;
+    font: inherit;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin: 0px;
+    font-size: $font-size-extrasmall;
+    transition: border $twohundred-dur $timing-function;
+
+    .modal-form__console:hover &,
+    .modal-form__console:focus &
+     {
+    outline: none !important;
+    border: 1px solid $color-button;
+    cursor: pointer;
+}
+}
+
+
+
+
+
+.modal-checkbox {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-weight: $font-weight-four;
+    font-size: $font-size-extrasmall;
+    line-height: 1.71;
+    letter-spacing: $letter-spacing-medium;
+    color: $color-addition;
+}
+.modal-checkbox__confirmation input[type='checkbox'] {
+    position: absolute;
+    top: 4px;
+    transform: translateX(-20px);
+    border-radius: 2px;
+    width: 16px;
+    height: 15px;}
+
+.modal-checkbox__input {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    position: absolute;
+    border: 2px solid $color-header;
+
+    &:checked {
+    border: 2px solid $color-button;
+    background-color: $color-button;
+    background-image: url('../images/icon_check_white.svg');
+    background-size: contain;
+    background-origin: border-box;
+}
+}
+.modal-checkbox__contract {
+    color: #2196F3;
+}
+.submit-button {
+    padding: 0;
+    margin: 0;
+    width: 200px;
+    height: 50px;
+    font-family: inherit;
+    font-weight: $font-weight-seven;
+    font-size: $font-size-small;
+    line-height: 1.88;
+    letter-spacing: $letter-spacing-big;
+
+    color: $background-color-main;
+    background-color: $color-button;
+    border: transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.modal-form__ring {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: $background-color-main;
+}
+.modal-form__close {
+    height: 18px;
+    width: 18px;
+    transition: fill $twohundred-dur $timing-function;
+    .modal-form__ring:hover &, .modal-form__ring:focus & {
+        fill: $color-button;
+    }
+}
