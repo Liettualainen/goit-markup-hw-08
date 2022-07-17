@@ -1,13 +1,30 @@
 .address {
-    display: flex;
-    margin-left: auto;
+@media screen and (min-width: $mobile) {
+      display: none;
+    }
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-left: 84px;        
+    }
+    @media screen and (min-width: $desktop) {
+            display: flex;
+            flex-wrap: nowrap;
+          flex-direction: row;
+            margin-left: auto;
+    }
 }
 .address__items {
     display: block;
-    
-    &:not(:last-child)  {
-    padding-right: 50px;
-                        }
+  
+        @media screen and (min-width: $tablet) {
+            &:not(:last-child) {padding-right: 0px;}   }
+        
+        @media screen and (min-width: $desktop) {
+           &:not(:last-child)  { padding-right: 50px;}
+                    }
 }
 
 .address__contact {
@@ -15,6 +32,15 @@
     text-align: center;
     color: $color-addition;
     font-weight: $font-weight-five;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 12px;
+    
+        }
+    @media screen and (min-width: $desktop) {
+            font-size: 14px;    
+        }
+
     font-size: $font-size-extrasmall;
     line-height: 1.14;
     letter-spacing: $letter-spacing-small;
@@ -27,6 +53,7 @@
     }
 }
 .address__icon {
+       
     display: inline-block;
     margin-left: 5px;
     margin-right: 5px;
@@ -40,3 +67,5 @@
     color: $color-hover;
     fill: $color-hover;         }
 }
+
+

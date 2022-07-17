@@ -1,18 +1,41 @@
 .job-presentation {
+      
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+ 
 }
 .job-presentation__items {
-    width: calc((100% - 60px)/3);
-    height: 404px;
-    margin-right: 30px;
-    margin-bottom: 30px;
+    
+    @media screen and (min-width: $mobile) {
+            width: 450px;
+            margin-bottom: 30px;
+            &:last-child { margin-bottom: 0px;}
+            &:first-child .job-presentation__sample {
+                            padding-bottom: 20px;   }
 
-    &:nth-child(3n) {
-    margin-right: 0;}
-    &:nth-last-child(-n+3) {
-    margin-bottom: 0;}
+
+        }
+    @media screen and (min-width: $tablet) {
+            width: 354px;
+            margin-right: 30px;
+            margin-bottom: 30px;
+            margin-right: 0;
+            width: calc((100% - 30px)/2);
+            &:first-child .job-presentation__sample {padding-bottom: 56px;}
+        }
+
+    @media screen and (min-width: $desktop) {            
+        width: 370px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        width: calc((100% - 60px)/3);
+        &:first-child .job-presentation__sample { padding-bottom: 20px; }
+        &:nth-child(3n) { margin-right: 0;}
+        &:nth-last-child(-n+3) { margin-bottom: 0;}      
+            }
 }
+
 .job-presentation__ref {
     display: block;
     text-decoration: none;
@@ -23,8 +46,23 @@
 }
 .job-presentation__window {
     position: relative;
-    overflow: hidden;
+    overflow: hidden;   
+   
 }
+.job-presentation__image {
+    height: 294px;     
+    @media screen and (min-width: $mobile) {
+                    width: 450px;                              
+            }       
+        @media screen and (min-width: $tablet) {
+            width: 354px;      
+        }    
+        @media screen and (min-width: $desktop) {
+            width: 370px;
+             
+        }
+}
+
 .job-presentation__cover {
     position: absolute;
     top: 0;

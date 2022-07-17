@@ -1,13 +1,22 @@
 .subscription-block {
-    margin-left: 93px;
-    padding-top: 12px;
-    list-style: none;
+ list-style: none;
+ 
+ 
+        @media screen and (min-width: $mobile) {
+        margin-left: 0px;    
+         }
+        @media screen and (min-width: $desktop) {
+            margin-left: 92px;
+            padding-top: 12px;      
+        }               
+    
 }
 .subscription-block__slogan {
-    display: block;
+
     width: 100%;
     padding: 0;
-    margin: 0;
+    margin: 0;            
+   
     margin-bottom: 20px;
     font-weight: $font-weight-seven;
     font-size: $font-size-extrasmall;
@@ -15,13 +24,35 @@
     letter-spacing: $letter-spacing-medium;
     text-transform: uppercase;
     color: $background-color-main;
+
+    @media screen and (min-width: $mobile) {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+    @media screen and (min-width: $desktop) {            
+            display: block;
+        }
 }
+
 .subscription-block__email {
-    display: flex;
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center;
+        align-items: center;    
 }
 .subscription-block__email input {
-    width: 358px;
-    height: 50px;
+    
+    @media screen and (min-width: $mobile) {
+        width: 450px;
+        height: 50px;
+        margin-bottom: 20px;
+    }
+    @media screen and (min-width: $desktop) {
+        width: 358px;
+        height: 50px;
+        margin-bottom: 0;
+
+    }  
     padding: 15px 0px 15px 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));

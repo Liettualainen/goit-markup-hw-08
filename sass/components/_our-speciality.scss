@@ -1,16 +1,29 @@
 .photo {
-    padding-bottom: 94px;
+    @media screen and (min-width: $mobile) {
+        display: none;
+        padding-bottom: 0px;
+        }
+    
+        @media screen and (min-width: $desktop) {
+            display: block;
+            padding-bottom: 94px;
+        }
+    
 }
-.section-title {
-    margin-top: 0%;
-    margin-bottom: 50px;
-    font-weight: $font-weight-seven;
-    font-size: $font-size-superbig;
-    line-height: 1.17;
-    letter-spacing: $letter-spacing-medium;
-    text-align: center;
-}
+.section-title {   
+        display: block;
+        margin-top: 0%;
+        margin-bottom: 50px;
+        font-weight: $font-weight-seven;
+        font-size: $font-size-superbig;
+        line-height: 1.17;
+        letter-spacing: $letter-spacing-medium;
+        text-align: center;
+        }
+
 .photo-card {
+
+
     display: flex;
     gap: 30px;
 

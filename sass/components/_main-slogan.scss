@@ -5,21 +5,34 @@
     background-color: $background-color-addition;
 }
 .overlay {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(..//images/slogan/Img\ \(1\).jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+ 
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(..//images/slogan/Img\ \(1\).jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
 }
 .main-slogan__box {
-    width: 696px;
-    margin: 0 auto;
+    @media screen and (min-width: $mobile) {
+            width: 360px;
+            margin: 0 auto;
+        }    
+        @media screen and (min-width: $desktop) {
+           width: 696px;
+        margin: 0 auto;
+        }   
 }
 .main-slogan__text {
+    display: block;
+        @media screen and (min-width: $mobile) {
+            font-size: 26px;        }    
+        @media screen and (min-width: $desktop) {
+        font-size: 44px;    }
     margin: 0;
     color: $background-color-main;
     font-weight: $font-weight-nine;
-    font-size: 44px;
+
     line-height: 1.36;
     letter-spacing: $letter-spacing-big;
     text-transform: uppercase;

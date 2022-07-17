@@ -4,8 +4,42 @@ footer {
     margin: 0;
 }
 .footer {
-    display: flex;
-    padding-top: 60px;
-    padding-bottom: 60px;
+display: flex;
+
+
+    @media screen and (min-width: $mobile) {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+                padding-top: 60px;
+                padding-bottom: 60px;
+                padding-left: 0px;
+                padding-right: 0px;
+                
+
+         
+        }
+    
+        @media screen and (min-width: $tablet) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            padding-left: 76px;
+            padding-right: 89px;
+        
+        }
+    
+        @media screen and (min-width: $desktop) {
+                display: flex; 
+                justify-content: left;
+                padding-top: 60px;
+                padding-bottom: 60px;
+                padding-left: 15px;
+                padding-right: 15px;
+
+        }
+
     
 }

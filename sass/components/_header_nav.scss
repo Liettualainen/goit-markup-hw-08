@@ -1,6 +1,18 @@
 .nav-main {
-    margin-left: 93px;
-}
+
+    @media screen and (min-width: $mobile) { 
+        display: none;    
+        }
+    
+        @media screen and (min-width: $tablet) {margin-left: 88px;
+            display: flex;
+        }
+    
+        @media screen and (min-width: $desktop) { margin-left: 93px;
+        
+        }
+    }  
+
 .nav-main__items {
     position: relative;
     padding: 10px 0px;

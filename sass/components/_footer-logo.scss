@@ -1,5 +1,21 @@
-.contact-block__logo {
-    display: inline-block;
+.contact-block__logo {   
+     
+        @media screen and (min-width: $mobile) {
+        display: flex;
+        justify-content: center;
+     
+        }
+         @media screen and (min-width: $desktop) {
+        display: flex;
+        justify-content: left;
+       
+        }
+         @media screen and (min-width: $desktop) {
+         display: inline-block;
+         
+         }
+
+
     margin-bottom: 20px;
     font-family: 'Raleway', sans-serif;
     color: $color-button;
@@ -15,12 +31,23 @@
     margin-bottom: 9px;
 }
 .contact-block__address {
+
     color: $background-color-main;
     font-weight: $font-weight-four;
     font-size: $font-size-extrasmall;
     line-height: 1.71;
     letter-spacing: $letter-spacing-medium;
     text-decoration: none;
+
+    @media screen and (min-width: $mobile) {
+        display: flex;
+        justify-content: center;
+    }
+    @media screen and (min-width: $desktop) {
+             display: flex;
+             justify-content: left;
+    }
+
     transition: color $twohundred-dur $timing-function;
     &:hover, &:focus {
         color: $color-hover;
@@ -34,6 +61,15 @@
     letter-spacing: $letter-spacing-medium;
     text-decoration: none;
 
+    @media screen and (min-width: $mobile) {
+            display: flex;
+            justify-content: center;
+        }
+
+    @media screen and (min-width: $desktop) {
+             display: flex;
+             justify-content: left;
+    }
     transition: color $twohundred-dur $timing-function;
     &:hover, &:focus {
     color: $color-hover;

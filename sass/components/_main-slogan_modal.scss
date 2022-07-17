@@ -18,11 +18,30 @@
 }
 .modal {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 528px;
-    height: 581px;
+
+    @media screen and (min-width: $mobile) {
+        top: 93px;
+        left: 15px;
+        width: 450px;
+        height: 609px;
+            }
+          @media screen and (min-width: $tablet) {
+              top: 208px;
+              left: 159px;
+              width: 450px;
+              height: 609px;
+          }      
+    
+    @media screen and (min-width: $desktop) {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 528px;
+        height: 581px;
+    }
+
+    
+
     padding: 40px;
     background-color: $background-color-main;
 }
@@ -31,9 +50,16 @@ textarea {
     resize: none;
 }
 .modal-form {
-    width: 448px;
+    @media screen and (min-width: $mobile) {
+            width: 370px;
+                margin-left: auto;
+                margin-right: auto;
+    }
+    @media screen and (min-width: $desktop) {
+       width: 448px;
     margin-left: auto;
     margin-right: auto;
+    }  
 }
 .modal-form__slogan {
     display: inline-block;
