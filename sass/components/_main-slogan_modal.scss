@@ -21,13 +21,15 @@
 
     @media screen and (min-width: $mobile) {
         top: 93px;
-        left: 15px;
+        left: 50%;
+         transform: translatex(-50%);
         width: 450px;
         height: 609px;
             }
           @media screen and (min-width: $tablet) {
-              top: 208px;
-              left: 159px;
+                top: 208px;
+                left: 50%;
+                transform: translatex(-50%);
               width: 450px;
               height: 609px;
           }      
@@ -38,9 +40,7 @@
         transform: translate(-50%, -50%);
         width: 528px;
         height: 581px;
-    }
-
-    
+    }   
 
     padding: 40px;
     background-color: $background-color-main;
@@ -133,10 +133,6 @@ textarea {
     cursor: pointer;
 }
 }
-
-
-
-
 
 .modal-checkbox {
     position: relative;
