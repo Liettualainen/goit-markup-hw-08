@@ -27,6 +27,48 @@
                 <nav class="nav">
                     <a href="./index.html" class="nav__logo">
                         <span class="nav__web">Web</span>Studio</a>
+
+
+                        <button data-modal-header-open type="button" class="menu-button is open" aria-expanded="false" data-menu-button>
+                            <svg width="40" height="40" aria-label="перемикач мобільного меню">
+                                <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+                                <!-- <use class="icon-close" href="./images/icons.svg#icon-close-mark"></use> -->
+                            </svg>
+                        </button>
+                        <div class="backdrop-header is-hidden" data-header-modal>
+                            <div class="modal-header">
+                        
+                                <ul class="modal-set list">
+                                    <li class="modal-contacts"><a href="./index.html" class="unactive">Студія</a></li>
+                                    <li class="modal-contacts"><a href="./portfolio.html" class="active">Портфоліо</a></li>
+                                    <li class="modal-contacts"><a href="./index.html" class="unactive">Контакти</a></li>
+                                    <li class="modal-contacts"><a href="tel:+380961111111" class="modal-tel active">+38 099 111 11 11</a></li>
+                                    <li class="modal-contacts"><a href="mailto:info@devstudio.com" class="modal-email">info@devstudio.com</a>
+                                    </li>
+                                </ul>
+                                <ul class="modal-social list">
+                                    <li class="social-set"><a href=" " class="social-name active">Instagram</a></li>
+                                    <li class="social-set"><a href=" " class="social-name active">Twitter</a></li>
+                                    <li class="social-set"><a href=" " class="social-name active">Facebook</a></li>
+                                    <li class="social-set"><a href=" " class="social-name active">LinkedIn</a></li>
+                                </ul>
+                        
+                        
+                        
+                                <button data-modal-header-close class="modal-form__ring border-color">
+                                    <svg>
+                                        <use href="./images/icons.svg#icon-close-mark" class="modal-form__close">
+                                        </use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+
+
+
+
+
                     <ul class="nav-main list">
                         <li class="nav-main__items"><a href="./index.html" class="nav-main__link">Студія</a></li>
                         <li class="nav-main__items"><a href="./portfolio.html" class="nav-main__link nav-main__link--current">Портфоліо</a></li>
@@ -300,7 +342,12 @@
 
         </div>
     </footer>
+ 
     
+<script src="./js/modal.js"></script>
+<script src="./js/header-modal.js"></script>
+<script src="./js/menu.js"></script>
+
 </body>
 </html>
 
