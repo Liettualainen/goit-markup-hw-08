@@ -1,5 +1,5 @@
 .photo {
-    @media screen and (min-width: $mobile) {
+    @media screen and (max-width: $desktop) {
         display: none;
         padding-bottom: 0px;
         }

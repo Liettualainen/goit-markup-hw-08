@@ -40,7 +40,15 @@
     &--current::after {
     position: absolute;
     left: 0;
-    top: 55px;
+
+    @media screen and (min-width: $tablet) {
+        top: 63px;
+        }
+     @media screen and (min-width: $desktop) {
+        top: 59px;        
+        }
+
+    top: 59px;
     content: "";
     width: 100%;
     height: 4px;

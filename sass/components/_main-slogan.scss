@@ -3,16 +3,36 @@
     padding-bottom: 200px;
     text-align: center;
     background-color: $background-color-addition;
+    align-items: center;
 }
 .overlay {
- 
+
+        @media screen and (min-width: $mobile) {
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                    url(..//images/slogan/mainmobile@2x.jpg);
+        
+            }
+
+    @media screen and (min-width: $tablet) {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url(..//images/slogan/Img\ \(1\).jpg);
+                url(..//images/slogan/maintablet@2x.jpg);
+       
+        }
+    
+        @media screen and (min-width: $desktop) {
+           background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(..//images/slogan/maindesk@2x.jpg);
+        }
+ 
+      
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
+            max-width: 1600px;
+            margin: 0 auto;
 
 }
+
 .main-slogan__box {
     @media screen and (min-width: $mobile) {
             width: 360px;

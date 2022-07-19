@@ -50,7 +50,8 @@
    
 }
 .job-presentation__image {
-    height: 294px;     
+    height: 294px;
+    display: block;     
     @media screen and (min-width: $mobile) {
                     width: 450px;                              
             }       
