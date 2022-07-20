@@ -1,8 +1,25 @@
 .job-presentation {
       
-    display: flex;
+
+    @media screen and (max-width: $mobile) {
+            display: block;
+            margin: 0;
+            padding: 0;
+
+    
+        }
+    
+    @media screen and (min-width: $mobile) {
+        display: block;       
+    
+        }
+    
+        @media screen and (min-width: $tablet) {
+      display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
+        }
  
 }
 .job-presentation__items {
@@ -10,15 +27,11 @@
         @media screen and (min-width: 320px) {
                 width:320px;
                 margin-bottom: 30px;
-                margin-left: auto;
-                margin-right: auto;        
+                
                 &:last-child {
                     margin-bottom: 0px;
                 }        
-                &:first-child .job-presentation__sample {
-                    padding-bottom: 20px;
-                }      
-        
+             
             }
     
     @media screen and (min-width: $mobile) {

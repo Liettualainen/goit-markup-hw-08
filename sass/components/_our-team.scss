@@ -2,8 +2,14 @@
     padding-top: 94px;
     padding-bottom: 94px;
     background-color: $background-color-button;
+    margin: 0 auto;
+    max-width: 1600px;
 }
 .team-set {
+    @media screen and (min-width: 320px) {
+    
+    
+        }
     @media screen and (min-width: $mobile) {
             display: flex;
             flex-wrap: wrap;         
@@ -28,12 +34,20 @@
 }
 
 .team-card {
+    display: block;
     box-sizing: border-box;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background-color: $background-color-main;
+    margin-right: auto;
+    margin-left: auto;
 }
 .team-card__photo {
+    @media screen and (min-width: 320px) {
+            display: block;
+            width: 450px;
+        }
+
     @media screen and (min-width: $mobile) {
             display: block;
             width: 450px;

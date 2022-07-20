@@ -1,4 +1,8 @@
 .strong-points {
+                @media screen and (min-width: 320px) {
+                padding: 60px 0;  
+                }
+
             @media screen and (min-width: $mobile) {
                     padding: 60px 0;
                 }
@@ -6,7 +10,7 @@
                 @media screen and (min-width: $desktop) {
                 padding: 94px 0;
                 }
-    padding: 94px 0;
+  
 }
 .points {
             list-style: none;
@@ -15,7 +19,8 @@
 
         @media screen and (min-width: 320px) {
                     display: block;
-                    width: auto;
+                  margin-left: auto;
+     
                 
                 }           
         @media screen and (min-width: $mobile) {
@@ -50,6 +55,10 @@
     align-items: center;
     margin-bottom: 30px;
 
+    @media screen and (max-width: $mobile) {
+            width: 320px;
+        }
+
     @media screen and (min-width: $mobile) {
         width: 450px;
     }
@@ -78,8 +87,16 @@
     text-transform: uppercase;
 }
 .point-set__text {
+    @media screen and (max-width: $mobile) {
+        display: block;
+            width: 320px;
+            margin-bottom: 30px;
+
+        }
     @media screen and (min-width: $mobile) {
-    width: 450px;
+        display: block;
+        width: 450px;
+        margin-bottom: 30px;
     }
     @media screen and (min-width: $tablet) {
         width: 354px;

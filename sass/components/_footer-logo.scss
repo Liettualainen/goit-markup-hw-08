@@ -1,6 +1,6 @@
 .contact-block__logo {   
         @media screen and (max-width: $mobile) {
-                display: flex;
+                display: block;
                 justify-content: center;        
             }     
         @media screen and (min-width: $mobile) {
@@ -42,7 +42,7 @@
     letter-spacing: $letter-spacing-medium;
     text-decoration: none;
     @media screen and (max-width: $mobile) {
-            display: flex;
+            display: block;
             justify-content: center;
         }
 
@@ -68,7 +68,7 @@
     letter-spacing: $letter-spacing-medium;
     text-decoration: none;
     @media screen and (max-width: $mobile) {
-            display: flex;
+            display: block;
             justify-content: center;
         }
 
