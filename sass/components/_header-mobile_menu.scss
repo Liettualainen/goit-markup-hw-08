@@ -1,21 +1,16 @@
 .menu-button {
-    display: inline-flex;
-    margin: 0;
-    align-items: flex-end;
-
-    padding: 0;
     border: none;
-
     background-color: transparent;
+    &:hover {
+        fill: $color-hover;
+        cursor: pointer;
+    }
 
     @media screen and (min-width: $tablet) {
         display: none;
     }
 
-    &:hover {
-        fill: $color-hover;
-        cursor: pointer;
-    }
+
 }
 
 // .menu-button .icon-close {

@@ -1,6 +1,7 @@
 .subscription-block {
  list-style: none;
- 
+    @media screen and (max-width: $mobile) {
+            margin-left: 0px;        }
  
         @media screen and (min-width: $mobile) {
         margin-left: 0px;    
@@ -25,6 +26,12 @@
     text-transform: uppercase;
     color: $background-color-main;
 
+    @media screen and (max-width: $mobile) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
     @media screen and (min-width: $mobile) {
         display: flex;
         justify-content: center;
@@ -41,6 +48,12 @@
         align-items: center;    
 }
 .subscription-block__email input {
+
+    @media screen and (max-width: $mobile) {
+            width: 450px;
+            height: 50px;
+            margin-bottom: 20px;
+        }
     
     @media screen and (min-width: $mobile) {
         width: 450px;

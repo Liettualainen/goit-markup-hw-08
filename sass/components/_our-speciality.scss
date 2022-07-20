@@ -10,15 +10,24 @@
         }
     
 }
-.section-title {   
-        display: block;
-        margin-top: 0%;
-        margin-bottom: 50px;
+.section-title {
+
+    
         font-weight: $font-weight-seven;
         font-size: $font-size-superbig;
         line-height: 1.17;
         letter-spacing: $letter-spacing-medium;
-        text-align: center;
+        text-align: center; 
+    
+
+  
+            display: block;
+        margin-top: 0%;
+        margin-bottom: 50px;
+        
+  
+    
+      
         }
 
 .photo-card {

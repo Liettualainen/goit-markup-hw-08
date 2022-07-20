@@ -2,22 +2,29 @@ footer {
     background-color: $background-color-addition;
     padding: 0;
     margin: 0;
+
 }
 .footer {
-display: flex;
+
+
+    @media screen and (max-width: $mobile) {
+       
+            padding-top: 60px;
+            padding-bottom: 60px;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
 
 
     @media screen and (min-width: $mobile) {
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
+            justify-content: center;
                 padding-top: 60px;
                 padding-bottom: 60px;
                 padding-left: 0px;
-                padding-right: 0px;
-                
-
-         
+                padding-right: 0px; 
         }
     
         @media screen and (min-width: $tablet) {

@@ -1,8 +1,14 @@
 .address {
+
+    
+        @media screen and (max-width: $mobile) {
+            display: none;
+        }
+
+
 @media screen and (min-width: $mobile) {
       display: none;
     }
-
     @media screen and (min-width: $tablet) {
         display: flex;
         flex-wrap: wrap;

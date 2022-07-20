@@ -6,6 +6,20 @@
  
 }
 .job-presentation__items {
+
+        @media screen and (min-width: 320px) {
+                width:320px;
+                margin-bottom: 30px;
+                margin-left: auto;
+                margin-right: auto;        
+                &:last-child {
+                    margin-bottom: 0px;
+                }        
+                &:first-child .job-presentation__sample {
+                    padding-bottom: 20px;
+                }      
+        
+            }
     
     @media screen and (min-width: $mobile) {
             width: 450px;
@@ -51,7 +65,10 @@
 }
 .job-presentation__image {
     height: 294px;
-    display: block;     
+    display: block;
+    @media screen and (max-width: $mobile) {
+            width: 320px;        }
+
     @media screen and (min-width: $mobile) {
                     width: 450px;                              
             }       

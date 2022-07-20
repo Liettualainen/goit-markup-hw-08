@@ -4,12 +4,20 @@ header {
     border-bottom: 1px solid #ECECEC;
 
 }
-.header, nav, .nav-main {
+.header, nav, .nav-main {       
+        @media screen and (max-width: $tablet) {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                position: relative;
+            }
+    @media screen and (min-width: $tablet) {
     display: flex;
     align-items: center;
     justify-content: space-between; 
-    position: relative;
-    width: 100%;
+    position: relative;  
+                  }
 }
+
 
 

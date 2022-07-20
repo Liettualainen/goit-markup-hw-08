@@ -1,5 +1,8 @@
 .nav-main {
-
+    
+    @media screen and (max-width: $mobile) {
+            display: none;
+        }
     @media screen and (min-width: $mobile) { 
         display: none;    
         }
@@ -8,7 +11,8 @@
             display: flex;
         }
     
-        @media screen and (min-width: $desktop) { margin-left: 93px;
+        @media screen and (min-width: $desktop) { 
+            margin-left: 93px;
         
         }
     }  
