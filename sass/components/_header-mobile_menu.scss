@@ -2,7 +2,7 @@
 
     display: flex;
     align-items: center;
-    
+
 
     border: none;
     background-color: transparent;
@@ -77,6 +77,17 @@
 
 .modal-header {
     position: absolute;
+       
+        
+            @media screen and (min-width: 320px) and (max-width: $mobile) {
+                top: 0;
+                left: 0;
+                width: 360px;
+                padding: 5px 0px 5px 0px;
+                    height: 796px;
+                    background-color: $background-color-main;
+
+            }
 
     @media screen and (min-width: $mobile) {
         top: 0;

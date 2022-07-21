@@ -1,4 +1,7 @@
-.contact-block__logo {   
+.contact-block__logo { 
+    @media screen and (min-width: 320px) and (max-width: $mobile) {
+            text-align: center;
+        }
         @media screen and (max-width: $mobile) {
                 display: block;
                 justify-content: center;        
@@ -41,6 +44,9 @@
     line-height: 1.71;
     letter-spacing: $letter-spacing-medium;
     text-decoration: none;
+    @media screen and (min-width: 320px) and (max-width: $mobile) {
+            text-align: center;
+        }
     @media screen and (max-width: $mobile) {
             display: block;
             justify-content: center;
@@ -67,6 +73,9 @@
     line-height: 1.71;
     letter-spacing: $letter-spacing-medium;
     text-decoration: none;
+    @media screen and (min-width: 320px) and (max-width: $mobile) {
+            text-align: center;
+        }
     @media screen and (max-width: $mobile) {
             display: block;
             justify-content: center;

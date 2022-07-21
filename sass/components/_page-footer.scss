@@ -9,43 +9,32 @@ footer {
 
 
     @media screen and (max-width: $mobile) {
-       
-            padding-top: 60px;
-            padding-bottom: 60px;
-            padding-left: 0px;
-            padding-right: 0px;
+            display: block;
+            padding: 60px 0px;       
         }
 
 
     @media screen and (min-width: $mobile) {
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-            justify-content: center;
-                padding-top: 60px;
-                padding-bottom: 60px;
-                padding-left: 0px;
-                padding-right: 0px; 
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+                    padding: 60px 0;
         }
     
         @media screen and (min-width: $tablet) {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            padding-top: 60px;
-            padding-bottom: 60px;
-            padding-left: 76px;
-            padding-right: 89px;
+                padding: 60px 76px 60px  89px;
         
         }
     
         @media screen and (min-width: $desktop) {
                 display: flex; 
                 justify-content: left;
-                padding-top: 60px;
-                padding-bottom: 60px;
-                padding-left: 15px;
-                padding-right: 15px;
+                padding: 60px 15px;
+               
 
         }
 

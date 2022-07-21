@@ -1,8 +1,9 @@
 .job-button {
     
-    @media screen and (min-width: 320px) {
-           display: block;           
-        }
+@media screen and (min-width: 320px) and (max-width: $mobile) {
+        display: block;
+        margin-bottom: 20px;
+    }
     @media screen and (min-width: $mobile) {
         display: flex;
         flex-wrap: wrap;
@@ -23,6 +24,9 @@
 }
 
 .job-button__items {
+    @media screen and (min-width: 320px) and (max-width: $mobile) {
+            &:not(:last-child) {margin-bottom: 10px;}
+        }
         @media screen and (max-width: $mobile) {
                 margin-left: 0px;
             }
